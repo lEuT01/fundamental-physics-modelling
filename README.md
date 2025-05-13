@@ -14,9 +14,9 @@ The notebook demonstrates how numerical methods can be applied to complex physic
 ### 1. The Travelling Salesperson Problem (TSP)
 
 - Implementation of a simulated annealing algorithm to solve the TSP
-- Visualization of path optimization across U.S. capital cities
+- Visualisation of path optimisation across U.S. capital cities
 - Analysis of temperature schedules and convergence rates
-- Exploration of parameter optimization for finding global minima
+- Exploration of parameter optimisation for finding global minima
 - Comparison of different cooling rates (α values)
 
 ### 2. The Tacoma Narrows Bridge Disaster Model
@@ -48,6 +48,7 @@ The notebook requires the following Python packages:
 ```bash
 jupyter notebook tsp-tacoma.ipynb
 ```
+Alternatively, use any workspace that has .ipynb capabilities.
 
 ## Key Results
 
