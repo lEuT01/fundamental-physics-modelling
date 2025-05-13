@@ -1,4 +1,5 @@
 # A Numerical Approach to Fundamental Physical Problems: Travelling Salesperson Problem and the Tacoma Bridge Disaster
+[![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange?logo=Jupyter)](tsp-tacoma.ipynb)
 
 This repository contains a Jupyter notebook that explores computational approaches to solve two fundamental problems in physics and engineering:
 
