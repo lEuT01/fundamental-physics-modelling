@@ -1,4 +1,4 @@
-# TSP-Tacoma: A Numerical Approach to Fundamental Physical Problems
+# A Numerical Approach to Fundamental Physical Problems: Travelling Salesperson Problem and the Tacoma Bridge Disaster
 
 This repository contains a Jupyter notebook that explores computational approaches to solve two fundamental problems in physics and engineering:
 
