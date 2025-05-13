@@ -1,61 +1,83 @@
-# Numerical Approaches to Fundamental Physics Problems
+# TSP-Tacoma: A Numerical Approach to Fundamental Physical Problems
 
-This repository contains computational models addressing two fundamental physics problems: the Traveling Salesperson Problem (TSP) and the Tacoma Narrows Bridge disaster modeling. Both implementations use numerical methods to explore optimization techniques and dynamical systems.
+This repository contains a Jupyter notebook that explores computational approaches to solve two fundamental problems in physics and engineering:
+
+1. **The Travelling Salesperson Problem (TSP)** - Using simulated annealing to find optimal paths
+2. **The Tacoma Narrows Bridge Disaster Model** - Simulating resonance and oscillation phenomena
 
 ## Overview
 
-The repository includes algorithms, simulations, and visualizations for:
+The notebook demonstrates how numerical methods can be applied to complex physical problems. It includes detailed mathematical explanations, algorithm implementations, and visualisations of the results.
 
-1. **The Traveling Salesperson Problem (TSP)**
-   - Implementation of the Simulated Annealing algorithm to find optimal paths
-   - Analysis of convergence rates and parameter optimization
-   - Visualization of paths across US state capitals
+## Contents
 
-2. **Tacoma Narrows Bridge Disaster Model**
-   - Numerical modeling of bridge oscillations using coupled differential equations
-   - Comparison of Taylor and Cromer methods for solving ODEs
-   - Analysis of resonant frequencies and the effects of driving forces
-   - Heat maps and time trajectories for visualizing system behavior
+### 1. The Travelling Salesperson Problem (TSP)
 
-## Getting Started
+- Implementation of a simulated annealing algorithm to solve the TSP
+- Visualization of path optimization across U.S. capital cities
+- Analysis of temperature schedules and convergence rates
+- Exploration of parameter optimization for finding global minima
+- Comparison of different cooling rates (α values)
 
-### Prerequisites
-- `numpy`
-- `matplotlib`
-- `pandas`
-- `scipy`
+### 2. The Tacoma Narrows Bridge Disaster Model
 
-### Running the Notebooks
+- Mathematical modelling of bridge oscillations using coupled differential equations
+- Comparison of Taylor and Cromer methods for solving differential equations
+- Analyse the effects of driving forces on bridge stability
+- Visualisation of time trajectories for different frequency values
+- Identification of resonant frequencies through heat maps
+- Comparison of simulation results with historical data
 
-The Jupyter notebooks in the `notebooks/` directory contain complete analyses with explanations and visualisations:
+## Requirements
 
+The notebook requires the following Python packages:
+- NumPy
+- Matplotlib
+- Random
+- JSON
+- Copy
+- IPython
+
+## Usage
+
+1. Clone this repository
+2. Ensure you have Jupyter Notebook or JupyterLab installed
+3. Install the required dependencies
+4. Open the notebook in Jupyter
+
+```bash
+jupyter notebook tsp-tacoma.ipynb
 ```
-jupyter notebook notebooks/tsp_analysis.ipynb
-jupyter notebook notebooks/tacoma_bridge_analysis.ipynb
-```
 
-## Repository Structure
+## Key Results
 
-- `data/`: Contains necessary data files (maps, coordinates)
-- `src/`: Source code organized by problem domain
-- `notebooks/`: Jupyter notebooks with complete analyses
-- `images/`: Figures used in the notebooks and documentation
+- **Travelling Salesperson Problem**: The simulated annealing algorithm successfully finds a minimum path distance of 2182.34 for 30 U.S. cities.
+- **Tacoma Narrows Bridge Model**: The resonant frequency of the model was found to be between 0.13 and 0.16 Hz, which is reasonably close to the literature value of 0.2 Hz.
 
-## Results
+## Visualisation Examples
 
-### Traveling Salesperson Problem
+The notebook contains numerous visualisations including:
+- Optimised travel paths overlaid on a U.S. map
+- Temperature-distance graphs showing convergence properties
+- Time series plots of bridge oscillations
+- Phase space trajectories showing chaotic behavior
+- 3D heat maps of torsional angles vs. frequency and time
 
-The simulated annealing algorithm found a minimum path for 30 US cities of 2182.34 units. The algorithm implements a temperature schedule to gradually cool the system, increasing the likelihood of finding the global minimum.
+## Limitations and Future Work
 
-### Tacoma Bridge Model
+The notebook discusses limitations of both models:
+- For TSP: The stochastic nature of simulated annealing means the global minimum isn't guaranteed
+- For Tacoma Bridge: The 2D model simplifies the complex 3D dynamics and aeroelastic flutter
 
-The model investigated the relationship between torsional angle θ and vertical displacement Y over time, finding the resonant frequency of the bridge model to be between 0.13 and 0.16 Hz, which is at maximum a 35% difference from the literature value of 0.2 Hz.
+Future work could include:
+- Implementing asymmetric TSP for more realistic travel scenarios
+- Developing more sophisticated 3D models of bridge dynamics
+- Incorporating material properties and structural elements
 
 ## License
 
-This project is licensed under the MIT License.
+MIT License
 
-## Acknowledgments
+## Acknowledgements
 
-- This project was created as part of a computational physics assignment in an undergraduate physics course at King's College London.
-- Map and coordinate data sourced from open datasets
+This work references multiple academic sources included in the notebook's references section.
